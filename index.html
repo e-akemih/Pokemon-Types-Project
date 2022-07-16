@@ -1,35 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Pokemon Type Chart</title>
-	</head>
-	<body>
-		<h1>Pokemon Type Chart</h1>
-		<h2>Choose up to two types to view strengths and weaknesses.</h2>
-		<div class="row">
-			<button id="normal">Normal</button>
-			<button id="fire">Fire</button>
-			<button id="water">Water</button>
-			<button id="electric">Electric</button>
-			<button id="grass">Grass</button>
-			<button id="ice">Ice</button>
-		</div>
-		<div class="row">
-			<button id="fighting">Fighting</button>
-			<button id="poison">Poison</button>
-			<button id="ground">Ground</button>
-			<button id="flying">Flying</button>
-			<button id="psychic">Psychic</button>
-			<button id="bug">Bug</button>
-		</div>
-		<div class="row">
-			<button id="rock">Rock</button>
-			<button id="ghost">Ghost</button>
-			<button id="dragon">Dragon</button>
-			<button id="dark">Dark</button>
-			<button id="steel">Steel</button>
-			<button id="fairy">Fairy</button>
-		</div>
-	</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pokemon Type Matching</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Pokemon Type Matching</h1>
+    <div 
+      class="btn-group"
+      role="group" 
+      aria-label="Basic radio toggle button group">
+      <input 
+        type="radio" 
+        class="btn-check"
+        name="btnradio"
+        id="btnradio1"
+        autocomplete="off" 
+        checked>
+      <label 
+        class="btn btn-outline-primary" 
+        for="btnradio1">
+          Attack
+      </label>
+
+      <input 
+        type="radio"
+        class="btn-check"
+        name="btnradio"
+        id="btnradio2"
+        autocomplete="off">
+      <label 
+        class="btn btn-outline-primary"
+        for="btnradio2">
+          Defense
+      </label>
+    </div>
+    <h2>Choose up to two types to view strengths and weaknesses.</h2>
+    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+      <input 
+        type="checkbox"
+        class="btn-check"
+        id="btncheck1"
+        autocomplete="off">
+      <label 
+        class="btn btn-outline-primary"
+        for="btncheck1">
+          Normal
+            <br>
+            <h3 id="normal">
+              x1
+            </h3>
+      </label>
+
+      <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck2">Fire<br><h3 id="fire">x1</h3></label>
+
+      <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck3">Water<br><h3 id="water">x1</h3></label>
+      
+      <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck4">Electric<br><h3 id="electric">x1</h3></label>
+
+      <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck5">Grass<br><h3 id="grass">x1</h3></label>
+
+      <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck6">Ice<br><h3 id="ice">x1</h3></label>
+    </div>
+    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+      <input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck7">Fighting<br><h3 id="fighting">x1</h3></label>
+
+      <input type="checkbox" class="btn-check" id="btncheck8" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck8">Ground<br><h3 id="ground">x1</h3></label>
+
+      <input type="checkbox" class="btn-check" id="btncheck9" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck9">Poison<br><h3 id="posion">x1</h3></label>
+      
+      <input type="checkbox" class="btn-check" id="btncheck10" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck10">Flying<br><h3 id="flying">x1</h3></label>
+
+      <input type="checkbox" class="btn-check" id="btncheck11" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck11">Psychic<br><h3 id="psychic">x1</h3></label>
+
+      <input type="checkbox" class="btn-check" id="btncheck12" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck12">Bug<br><h3 id="bug">x1</h3></label>
+    </div>
+    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+      <input type="checkbox" class="btn-check" id="btncheck13" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck13">Rock<br><h3 id="rock">x1</h3></label>
+
+      <input type="checkbox" class="btn-check" id="btncheck14" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck14">Ghost<br><h3 id="ghost">x1</h3></label>
+
+      <input type="checkbox" class="btn-check" id="btncheck15" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck15">Dragon<br><h3 id="dragon">x1</h3></label>
+      
+      <input type="checkbox" class="btn-check" id="btncheck16" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck16">Dark<br><h3 id="dark">x1</h3></label>
+
+      <input type="checkbox" class="btn-check" id="btncheck17" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck17">Steel<br><h3 id="steel">x1</h3></label>
+
+      <input type="checkbox" class="btn-check" id="btncheck18" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck18">Fairy<br><h3 id="fairy">x1</h3></label>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
 </html>
